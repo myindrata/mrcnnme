@@ -72,8 +72,11 @@ class gnsConfig(Config):
     DETECTION_MIN_CONFIDENCE = 0.7
     BACKBONE = "resnet50"
     DETECTION_MAX_INSTANCES = 20
-
+    
+    FPN_CLASSIF_FC_LAYERS_SIZE = 768
     IMAGE_MAX_DIM = 768
+    IMAGE_MIN_DIM = 480
+    
     RPN_ANCHOR_SCALES = (16,32, 64, 128, 256)
 
 ############################################################
